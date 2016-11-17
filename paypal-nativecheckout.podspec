@@ -25,8 +25,7 @@ s.homepage     = "http://www.paypal.com"
 #  CocoaPods will detect a license file if there is a named LICENSE*
 #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
 #
-s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-# s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+s.license      = { :type => "BSD", :file => "LICENSE" }
 
 
 # ――― Author Metadata  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -56,7 +55,9 @@ s.platform     = :ios, "8.0"
 # s.watchos.deployment_target = "2.0"
 # s.tvos.deployment_target = "9.0"
 
-s.source       = { :git => "https://github.com/paypal/paypalcheckout-ios.git", :tag => "1.0.0" }
+# s.source       = { :git => "https://github.com/paypal/paypalcheckout-ios.git", :tag => "master" }
+
+s.source       = { :git => "git@github.com:paypal/paypalcheckout-ios.git", :tag => "master" }
 
 
 s.ios.vendored_frameworks = 'Frameworks/NativeCheckout.framework'
