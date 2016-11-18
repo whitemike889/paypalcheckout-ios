@@ -1,1 +1,1 @@
-[iOS SDK Documentation](https://github.com/paypal/paypalcheckout-documentation/blob/master/ios.md)
+[iOS SDK Documentation](https://github.com/paypal/paypalnativecheckout-docs/blob/master/ios.md)
