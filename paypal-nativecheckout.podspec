@@ -57,7 +57,7 @@ s.platform     = :ios, "8.0"
 
 # s.source       = { :git => "git@github.com:paypal/paypalcheckout-ios.git", :tag => "1.0.0" }
 
-s.source       = { :git => "https://github.com/paypal/paypalcheckout-ios.git", :tag => "1.0.0" }
+s.source       = { :git => "https://github.com/paypal/paypalcheckout-ios.git", :tag => "1.0.1" }
 s.vendored_frameworks = 'Frameworks/NativeCheckout.framework'
 
 end
