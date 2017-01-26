@@ -39,6 +39,11 @@
 - (void)setWebView: (UIWebView *)view;
 
 /*
+ * setupSpinner: (UIView*) view
+ */
+- (void)_setupSpinner: (UIView*) view;
+
+/*
  * handleIfPPCheckout: this is the method that the merchant's view controller passes in the webview delegate to give an opportunity for handling paypal checkout specific urls.
  */
 - (BOOL)handleIfPPCheckout: (NSURLRequest *) request;
@@ -47,6 +52,10 @@
  * openInWebView: Merchant's redirect url gets passed to the webview. On post payment or cancel payment, the urls get passed to the webview so that webview is put in an appropriate.
  */
 - (void)openInWebView: (NSDictionary *) urls;
+
+/*
+ * hideActivityIndicator: hides the spinner put up by the Paypal SDK
+ */
 
 - (void)hideActivityIndicator;
 
