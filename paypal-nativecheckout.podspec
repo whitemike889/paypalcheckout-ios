@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 #
 
 s.name         = "paypal-nativecheckout"
-s.version      = "1.1.0"
+s.version      = "1.2.0"
 s.summary      = "Static library for Paypal native checkout."
 
 # This description is used to generate tags and improve search results.
@@ -57,7 +57,7 @@ s.platform     = :ios, "8.0"
 
 # s.source       = { :git => "git@github.com:paypal/paypalcheckout-ios.git", :tag => "1.1.0" }
 
-s.source       = { :git => "https://github.paypal.com/pvenkatakrishnan/paypalcheckout-ios.git", :tag => "1.1.0" }
+s.source       = { :git => "https://github.paypal.com/pvenkatakrishnan/paypalcheckout-ios.git", :tag => "1.2.0" }
 s.vendored_frameworks = 'Frameworks/NativeCheckout.framework'
 
 end
