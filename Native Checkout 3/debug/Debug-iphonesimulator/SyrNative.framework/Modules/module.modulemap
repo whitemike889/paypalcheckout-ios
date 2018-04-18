@@ -1,0 +1,6 @@
+framework module SyrNative {
+  umbrella header "SyrNative.h"
+
+  export *
+  module * { export * }
+}
