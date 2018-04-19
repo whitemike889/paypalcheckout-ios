@@ -16,15 +16,24 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
-  
+
+	// setting up the view to show our store
   UIWebView *webview=[[UIWebView alloc]initWithFrame:[UIScreen mainScreen].bounds];
-  NSString *url=@"merchant_url_for_store";
+  NSString *url=@"https://paypalmerchant.herokuapp.com/cart";
   NSURL *nsurl=[NSURL URLWithString:url];
   NSURLRequest *nsrequest=[NSURLRequest requestWithURL:nsurl];
   [webview loadRequest:nsrequest];
   [self.view addSubview:webview];
-  [[PYPLCheckout sharedInstance] interceptWebView:webview];
+  
+  // get an instance of native checkout
+  PYPLCheckout* checkout = [PYPLCheckout sharedInstance];
+  
+  // set the environment for paypal
+  checkout.serviceEnvironment = kPYPLEnvironment_SandBox;
+  
+  // turn off the native implimentation, and just use a secure browser (no universal url needed)
+  checkout.webBrowserOnlyMode = YES;
+  [checkout interceptWebView:webview];
 }
 
 

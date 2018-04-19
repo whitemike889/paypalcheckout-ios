@@ -2,12 +2,23 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>ppmerchantsample</string>
+			</array>
+			<key>CFBundleURLName</key>
+			<string></string>
+		</dict>
+	</array>
 	<key>Paypal_Client_Id</key>
-	<string>Client_ID</string>
+	<string>AX93NErgg-F0VeBQ6pNLwa2VKQdw3BnKDvBnasIe_pKoprQyz6NiSf6XS7I1Qtro-VD4GP-AJdjT0Uz4</string>
 	<key>Paypal_Url_Scheme</key>
-	<string>sampleapp</string>
+	<string>ppmerchantsample</string>
 	<key>Paypal_Universal_Link</key>
-	<string>http://paypalmerchant.herokuapp.com/cart</string>
+	<string>https://paypalmerchant.herokuapp.com/thankyou</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -47,5 +58,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 </dict>
 </plist>
