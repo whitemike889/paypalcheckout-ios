@@ -5,7 +5,7 @@
 //  Created by Anderson,Derek on 11/15/17.
 //  Copyright © 2017 PayPal. All rights reserved.
 //
-#import "NativeCheckout/PYPLCheckout.h"
+#import <PayPalCheckout/PYPLCheckout.h>
 #import "ViewController.h"
 
 @interface ViewController ()
@@ -32,7 +32,7 @@
   checkout.serviceEnvironment = kPYPLEnvironment_SandBox;
   
   // turn off the native implimentation, and just use a secure browser (no universal url needed)
-  checkout.webBrowserOnlyMode = YES;
+//  checkout.webBrowserOnlyMode = YES;
   [checkout interceptWebView:webview];
 }
 

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <NativeCheckout/PYPLCheckout.h>
+#import <PayPalCheckout/PYPLCheckout.h>
 
 @interface AppDelegate ()
 
@@ -18,16 +18,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   return YES;
-}
-
-
-// these hooks are required for PayPal Native Implimentation
-// not needed for webBrowserOnly mode.
-- (BOOL)application:(UIApplication *)application
-continueUserActivity:(NSUserActivity *)userActivity
- restorationHandler:(void (^)(NSArray *restorableObjects))restorationHandler
-{
-  return [[PYPLCheckout sharedInstance] application:application continueUserActivity:userActivity restorationHandler:restorationHandler];
 }
 
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {

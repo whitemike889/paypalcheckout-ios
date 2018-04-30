@@ -68,6 +68,10 @@
 		<data>
 		issasA922JLMdm/4YKR7oyoicP8=
 		</data>
+		<key>Headers/SyrNetworking.h</key>
+		<data>
+		NSy77upmoca7GbMc+zsa25Oz5YU=
+		</data>
 		<key>Headers/SyrOpacityAnimation.h</key>
 		<data>
 		YkoerZFhF/8XXinkgrmCw7K9mjQ=
@@ -301,6 +305,17 @@
 			<key>hash2</key>
 			<data>
 			gCCSlB/Yy5g5UqmsM3MzsaY5PmULhWgDwrgwQddQvMs=
+			</data>
+		</dict>
+		<key>Headers/SyrNetworking.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			NSy77upmoca7GbMc+zsa25Oz5YU=
+			</data>
+			<key>hash2</key>
+			<data>
+			yLo6Dwtx0GqE85Y4xd6iFyy1wRjpFyL84oMKy8FeqZY=
 			</data>
 		</dict>
 		<key>Headers/SyrOpacityAnimation.h</key>

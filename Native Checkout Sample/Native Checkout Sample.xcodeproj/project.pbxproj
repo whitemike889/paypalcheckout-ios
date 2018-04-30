@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D21B2A1E2087223400EDFF36 /* libNativeCheckout.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B2A122087220D00EDFF36 /* libNativeCheckout.a */; settings = {ATTRIBUTES = (Weak, ); }; };
 		D21B2A1F208723FB00EDFF36 /* libAppAuth-iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B2A172087220D00EDFF36 /* libAppAuth-iOS.a */; };
 		D21B2A20208723FB00EDFF36 /* libAuthCore.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B2A132087220D00EDFF36 /* libAuthCore.a */; };
 		D21B2A21208723FB00EDFF36 /* libPPRiskComponent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B2A142087220D00EDFF36 /* libPPRiskComponent.a */; };
 		D21B2A242087240A00EDFF36 /* SyrNative.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D21B2A222087240A00EDFF36 /* SyrNative.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		D21B2A252087240A00EDFF36 /* AppAuth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D21B2A232087240A00EDFF36 /* AppAuth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D21B2A272087243B00EDFF36 /* PYPLCheckout.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D21B2A262087243B00EDFF36 /* PYPLCheckout.bundle */; };
+		D2BBD0D420891BAB0023731F /* SyrNative.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D21B2A222087240A00EDFF36 /* SyrNative.framework */; };
+		D2BBD17B208937D20023731F /* PayPalCheckout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BBD17A208937D20023731F /* PayPalCheckout.framework */; };
+		D2BBD17C208937DB0023731F /* PayPalCheckout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2BBD17A208937D20023731F /* PayPalCheckout.framework */; };
+		D2BBD17D208937DB0023731F /* PayPalCheckout.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D2BBD17A208937D20023731F /* PayPalCheckout.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D2DE8F531FBCDCFB00EEF358 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE8F521FBCDCFB00EEF358 /* AppDelegate.m */; };
 		D2DE8F561FBCDCFB00EEF358 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2DE8F551FBCDCFB00EEF358 /* ViewController.m */; };
 		D2DE8F591FBCDCFB00EEF358 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2DE8F571FBCDCFB00EEF358 /* Main.storyboard */; };
@@ -31,7 +33,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D21B2A242087240A00EDFF36 /* SyrNative.framework in Embed Frameworks */,
-				D21B2A252087240A00EDFF36 /* AppAuth.framework in Embed Frameworks */,
+				D2BBD17D208937DB0023731F /* PayPalCheckout.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -44,8 +46,8 @@
 		D21B2A142087220D00EDFF36 /* libPPRiskComponent.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPPRiskComponent.a; path = "../Native Checkout 3/debug/Debug-iphonesimulator/libPPRiskComponent.a"; sourceTree = "<group>"; };
 		D21B2A172087220D00EDFF36 /* libAppAuth-iOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libAppAuth-iOS.a"; path = "../Native Checkout 3/debug/Debug-iphonesimulator/libAppAuth-iOS.a"; sourceTree = "<group>"; };
 		D21B2A222087240A00EDFF36 /* SyrNative.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SyrNative.framework; path = "../Native Checkout 3/debug/Debug-iphonesimulator/SyrNative.framework"; sourceTree = "<group>"; };
-		D21B2A232087240A00EDFF36 /* AppAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppAuth.framework; path = "../Native Checkout 3/debug/Debug-iphonesimulator/AppAuth.framework"; sourceTree = "<group>"; };
 		D21B2A262087243B00EDFF36 /* PYPLCheckout.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PYPLCheckout.bundle; sourceTree = "<group>"; };
+		D2BBD17A208937D20023731F /* PayPalCheckout.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = PayPalCheckout.framework; sourceTree = "<group>"; };
 		D2DE8F4E1FBCDCFB00EEF358 /* Native Checkout Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Native Checkout Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2DE8F511FBCDCFB00EEF358 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D2DE8F521FBCDCFB00EEF358 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -64,10 +66,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D21B2A1E2087223400EDFF36 /* libNativeCheckout.a in Frameworks */,
+				D2BBD17C208937DB0023731F /* PayPalCheckout.framework in Frameworks */,
 				D21B2A1F208723FB00EDFF36 /* libAppAuth-iOS.a in Frameworks */,
 				D21B2A20208723FB00EDFF36 /* libAuthCore.a in Frameworks */,
+				D2BBD17B208937D20023731F /* PayPalCheckout.framework in Frameworks */,
 				D21B2A21208723FB00EDFF36 /* libPPRiskComponent.a in Frameworks */,
+				D2BBD0D420891BAB0023731F /* SyrNative.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,14 +98,14 @@
 		D2DE8F501FBCDCFB00EEF358 /* Native Checkout Sample */ = {
 			isa = PBXGroup;
 			children = (
+				D2DE8FCA1FBCDFDC00EEF358 /* Images.xcassets */,
 				D21B2A262087243B00EDFF36 /* PYPLCheckout.bundle */,
 				D2DE8F511FBCDCFB00EEF358 /* AppDelegate.h */,
 				D2DE8F521FBCDCFB00EEF358 /* AppDelegate.m */,
 				D2DE8F541FBCDCFB00EEF358 /* ViewController.h */,
 				D2DE8F551FBCDCFB00EEF358 /* ViewController.m */,
-				D2DE8F571FBCDCFB00EEF358 /* Main.storyboard */,
 				D2DE8F5A1FBCDCFB00EEF358 /* Assets.xcassets */,
-				D2DE8FCA1FBCDFDC00EEF358 /* Images.xcassets */,
+				D2DE8F571FBCDCFB00EEF358 /* Main.storyboard */,
 				D2DE8F5C1FBCDCFB00EEF358 /* LaunchScreen.storyboard */,
 				D2DE8F5F1FBCDCFB00EEF358 /* Info.plist */,
 				D2DE8F601FBCDCFB00EEF358 /* main.m */,
@@ -112,7 +116,7 @@
 		D2DE8F671FBCDD0D00EEF358 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D21B2A232087240A00EDFF36 /* AppAuth.framework */,
+				D2BBD17A208937D20023731F /* PayPalCheckout.framework */,
 				D21B2A222087240A00EDFF36 /* SyrNative.framework */,
 				D21B2A172087220D00EDFF36 /* libAppAuth-iOS.a */,
 				D21B2A132087220D00EDFF36 /* libAuthCore.a */,
@@ -337,6 +341,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../**",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Native Checkout Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
@@ -346,7 +351,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "PayPal.Native-Checkout-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Native\\ Checkout\\ 3/debug/Debug-iphonesimulator/include/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -359,6 +364,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/../**",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Native Checkout Sample/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
@@ -368,7 +374,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "PayPal.Native-Checkout-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Native\\ Checkout\\ 3/debug/Debug-iphonesimulator/include/**";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
