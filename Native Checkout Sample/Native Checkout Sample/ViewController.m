@@ -32,7 +32,7 @@
   checkout.serviceEnvironment = kPYPLEnvironment_SandBox;
   
   // turn off the native implimentation, and just use a secure browser (no universal url needed)
-//  checkout.webBrowserOnlyMode = YES;
+	checkout.webBrowserOnlyMode = YES;
   [checkout interceptWebView:webview];
 }
 
