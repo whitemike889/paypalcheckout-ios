@@ -5,7 +5,7 @@
 //  Created by Anderson,Derek on 11/15/17.
 //  Copyright © 2017 PayPal. All rights reserved.
 //
-#import <PayPalCheckout/PYPLCheckout.h>
+#import <NativeCheckout/PYPLCheckout.h>
 #import "ViewController.h"
 
 @interface ViewController ()

@@ -351,6 +351,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "PayPal.Native-Checkout-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Native\\ Checkout\\ 3/debug/Debug-iphonesimulator/include/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 			};
@@ -375,6 +376,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "PayPal.Native-Checkout-Sample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/../Native\\ Checkout\\ 3/debug/Debug-iphonesimulator/include/**";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "";
 			};

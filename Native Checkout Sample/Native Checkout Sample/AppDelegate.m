@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <PayPalCheckout/PYPLCheckout.h>
+#import <NativeCheckout/PYPLCheckout.h>
 
 @interface AppDelegate ()
 
